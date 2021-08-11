@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@700&display=swap');
+
+$color-blue: #51afe1;
+$color-light-blue: #6fcdff;
+$font-montserrat: 'Montserrat';
+$font-open-sans: 'Open Sans';
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #e4edf4;
+  margin: 0;
+  min-width: 300px;
+  font-family: $font-montserrat;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none
+}
+
+p {
+  margin: 0;
+}
+
+.pop-up-notification {
+  position: fixed;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  &__text {
+    display: inline-block;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0 0 2rem 2rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 500;
+  }
+}
+
+.content {
+  box-sizing: border-box;
+}
+
+@import 'btn.scss';
+
+@import 'header.scss';
+
+@import 'form_add_film.scss';
+
+@import 'film.scss';
